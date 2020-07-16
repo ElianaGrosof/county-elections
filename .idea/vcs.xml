@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/openelections-data-oh" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/openelections/openelections-data-co" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/openelections/openelections-data-ia" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/openelections/openelections-data-mi" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/openelections/openelections-data-mn" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/openelections/openelections-data-nh" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/openelections/openelections-data-nv" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/openelections/openelections-data-oh" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/openelections/openelections-data-pa" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/openelections/openelections-data-wi" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/openelections/openelections-results-fl" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/openelections/openelections-results-nc" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/openelections/openelections-results-va" vcs="Git" />
+  </component>
+</project>

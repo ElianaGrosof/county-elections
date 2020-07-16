@@ -1,0 +1,51 @@
+Questions
+
+Biggest question:
+In Ohio:
+- Are people more likely to vote in local elections in general elections years?
+	Initially, compare across the same year (2018)
+	Can expand to multiple years if I want to do timeseries stuff
+- If so, by how much?
+- What kind of local elections? - can break down by office type
+	need to be careful about multiple candidate voting potentially
+- To what extent does it vary by county?
+
+Question(s) to start with: 
+For Lorain County, OH
+- How many people voted?
+- How many eligible voters are in the county?
+- What was on the ballot?
+- What other issues were there on ballot?
+- Of the people who voted, how often did people vote non-National Senate/House reps?
+
+Basic summary statistics:
+- How many ballots were cast, total
+- # votes cast for a national candidate / total votes
+- # votes cast for each office / total votes
+
+Compare to a similar county in another state and see if any differences. 
+
+
+Are people more likely to vote the entire ballot in non-presidential election years?
+
+
+Larger questions:
+- How many people vote when the national-level offices are not on the ballot?
+    Is there a different between Senate and House on non-presidential election years?
+
+Types of questions I could ask based on the data:
+- How many people vote when the national-level offices are not on the ballot?
+- What about Senate vs House vs only local elections?
+- Need a different dataset in combination: What kinds of people vote in which elections? Demographic differences?
+- How does it vary across state, counties within states, similar-sized counties in different states?
+- What are possible factors (ideally based on pre-existing research) that could explain these differences?
+- Do people just ignore downballot issues? How many people of the people voting actually vote for the local initiatives?
+
+
+Motivation:
+Results of local elections and initiatives tend to make more a difference on a day-to-day basis for most people than national elections. Yet they are less flashy and tend to get less turnout than national elections. How does this vary by state, county, etc?
+
+https://www.brookings.edu/blog/the-avenue/2018/10/31/voting-in-local-elections-impacts-life-and-death-a-case-study-in-washington-dc/
+https://www.bbc.com/news/uk-politics-17548547
+https://insights.diligent.com/council-processes/what-primary-functions-local-government
+"powers of local government" for more

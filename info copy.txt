@@ -1,0 +1,63 @@
+OpenElections Data
+https://github.com/openelections?q=ohio&type=&language=
+
+Source of Other Datasets:
+https://libguides.princeton.edu/elections#s-lg-box-10082744
+
+This dataset contains precinct-level returns for local elections on November 8, 2016.
+
+
+Potential output:
+interactive maps
+explanations
+
+
+To start:
+- make a map of Ohio counties, report how many people voted yes/no on a state-level initative
+
+
+Specific output:
+1. summary statistics as an interactive map for every county in ohio for a single year
+2. those summary statistics over time
+
+Demonstrates: 
+data cleaning
+analysis
+
+Major question:
+When people vote in a national election, how often do they vote for the other things on the ballot? Basically, do people just vote for the president, or do they also make sure to vote on the other issues on the ballot as well?
+
+Motivation: Local elections matter, too, even in presidential years. 
+
+Question(s) to start with: 
+For Lorain County, OH
+- How many people voted?
+- How many eligible voters are in the county?
+- What was on the ballot?
+- What other issues were there on ballot?
+- Of the people who voted, how often did people vote non-National Senate/House reps?
+
+Basic summary statistics:
+- How many ballots were cast, total
+
+Compare to a similar county in another state and see if any differences. 
+
+
+Are people more likely to vote the entire ballot in non-presidential election years?
+
+
+Larger questions:
+- How many people vote when the national-level offices are not on the ballot?
+    Is there a different between Senate and House on non-presidential election years?
+
+Types of questions I could ask based on the data:
+- How many people vote when the national-level offices are not on the ballot?
+- What about Senate vs House vs only local elections?
+- Need a different dataset in combination: What kinds of people vote in which elections? Demographic differences?
+- How does it vary across state, counties within states, similar-sized counties in different states?
+- What are possible factors (ideally based on pre-existing research) that could explain these differences?
+- Do people just ignore downballot issues? How many people of the people voting actually vote for the local initiatives?
+
+
+Motivation:
+Results of local elections and initiatives tend to make more a difference on a day-to-day basis for most people than national elections. Yet they are less flashy and tend to get less turnout than national elections. How does this vary by state, county, etc?
