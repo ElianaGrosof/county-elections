@@ -2,18 +2,18 @@ import pandas as pd
 import numpy as np
 
 #results of Nov, 6 2018 election for each swing state
-swinggeneral18 = {'Colorado' : 'openelections_data/openelections-data-co/2018/20181106__co__general__precinct.csv',
-                'Iowa': "openelections_data/openelections-data-ia/2018/20181106__ia__general__precinct.csv",
-                'Michigan' : "openelections_data/openelections-data-mi/2018/20181106__mi__general__precinct.csv",
-                'Minnesota' : "openelections_data/openelections-data-mn/2018/20181106__mn__general__precinct.csv",
-                'New Hampshire' : "openelections_data/openelections-data-nh/2018/20181106__nh__general__precinct.csv",
-                'Nevada' : "openelections_data/openelections-data-nv/2018/20181106__nv__general__precinct.csv",
-                'Ohio' : "openelections_data/openelections-data-oh/2018/20181106__oh__general__precinct.csv",
-                'Pennsylvania' : "openelections_data/openelections-data-pa/2018/20181106__pa__general__county.csv",
-                'Wisconsin' : "openelections_data/openelections-data-wi/2018/20181106__wi__general__ward.csv",
-                'Florida' : "openelections_data/openelections-results-fl/raw/20181106__fl__general__precinct__raw.csv",
-                'North Carolina' : "openelections_data/openelections-results-nc/raw/20181106__nc__general__precinct__raw.csv",
-                'Virginia' : 'openelections_data/openelections-results-va/raw/20181106__va__general__precinct__raw.csv' }
+swinggeneral18 = {'Colorado' : 'openelections/openelections-data-co/2018/20181106__co__general__precinct.csv',
+                'Iowa': "openelections/openelections-data-ia/2018/20181106__ia__general__precinct.csv",
+                'Michigan' : "openelections/openelections-data-mi/2018/20181106__mi__general__precinct.csv",
+                'Minnesota' : "openelections/openelections-data-mn/2018/20181106__mn__general__precinct.csv",
+                'New Hampshire' : "openelections/openelections-data-nh/2018/20181106__nh__general__precinct.csv",
+                'Nevada' : "openelections/openelections-data-nv/2018/20181106__nv__general__precinct.csv",
+                'Ohio' : "openelections/openelections-data-oh/2018/20181106__oh__general__precinct.csv",
+                'Pennsylvania' : "openelections/openelections-data-pa/2018/20181106__pa__general__county.csv",
+                'Wisconsin' : "openelections/openelections-data-wi/2018/20181106__wi__general__ward.csv",
+                'Florida' : "openelections/openelections-results-fl/modified/20181106__fl__general__precinct__raw.csv",
+                'North Carolina' : "openelections/openelections-results-nc/modified/20181106__nc__general__precinct__raw.csv",
+                'Virginia' : 'openelections/openelections-results-va/modified/20181106__va__general__precinct__raw.csv' }
 
 statenames = ['Colorado', 'Iowa', 'Michigan', 'Minnesota', 'New Hampshire', 'Nevada', 'Ohio', 'Pennsylvania', 'Wisconsin', 'Florida', 'North Carolina', 'Virginia']
 stateabbs = {'Colorado':'CO', "Iowa":'IA', "Michigan":'MI', "Minnesota":'MN', "New Hampshire": 'NH', "Nevada": 'NV', "Ohio":'OH', "Pennsylvania": 'PA', "Wisconsin":'WI', "Florida":'FL', "North Carolina":'NC', "Virginia":'VA'}
@@ -57,6 +57,7 @@ def cleanparty(df):
     df['county'] = df['county'].str.replace(r'[^\w\s]+', '')
     df['county'] = df['county'].str.lower()
     #make sure votes are read as ints
+    df['votes'] = df['votes'].fillna(0)
     df['votes'] = df['votes'].astype(int)
     return df
 
@@ -74,11 +75,16 @@ def viewpartyofficeinfo():
         print("Parties", parties)
 
 def makeaggregated(df, counties):
-    aggregatedstats = pd.DataFrame(columns=["State","County", "Office", "FIPS","dem_total","rep_total","other_total","margin"])
-    counties;
+    statsnooffice = pd.DataFrame(columns=["State","County", "FIPS","dem_total","rep_total","other_total","margin", "% margin"])
+    stats = pd.DataFrame(columns=["State","County", "Office", "FIPS","dem_total","rep_total","other_total","margin"])
+
     for county in counties:
         countydf = df[((df["county"] == county) & (df["party"].str.contains("DEM") | df["party"].str.contains("REP")))]
         offices = countydf["office"].unique()
+        totalmargin = 0
+        totaldem = 0
+        totalrep = 0
+        totalother = 0
         for office in offices:
             #dem_total, rep_total, other_total
             dem_total = countydf[(countydf["party"] == 'DEM') & (countydf['office'] == office)]["votes"].sum(skipna=True)
@@ -87,13 +93,24 @@ def makeaggregated(df, counties):
 
             margin = dem_total - rep_total
 
+            totalmargin += margin
+            totaldem += dem_total
+            totalrep += rep_total
+            totalother += other_total
+
             new_row = {"State":state,"County":county,"Office":office,"FIPS":fipsmap[state][county],"dem_total":dem_total,"rep_total":rep_total,
                        "other_total":other_total,"margin":margin}
 
-            aggregatedstats = aggregatedstats.append(new_row, ignore_index=True)
-    return aggregatedstats, offices
+            stats = stats.append(new_row, ignore_index=True)
 
-statenames = ["Florida", "North Carolina", "Virginia"]
+        percentmargin = (totalmargin/(totaldem+totalrep+totalother))*100
+
+        new_row_nooffice = {"State": state, "County": county, "FIPS": fipsmap[state][county], "dem_total": totaldem, "rep_total": totalrep,
+                   "other_total": totalother, "margin": totalmargin, "% margin": percentmargin}
+
+        statsnooffice = statsnooffice.append(new_row_nooffice, ignore_index=True)
+
+    return stats, offices, statsnooffice
 
 makefipsmap()
 
@@ -105,19 +122,19 @@ for state in statenames:
     #This is a New Hampshire-specific dataset cleaning thing
     cleandf = cleandf[~(cleandf.county == state.lower())]
 
-    uniquec = cleandf["county"].unique()
-
     df = cleandf
 
     stateabb = stateabbs[state]
     counties = df["county"].unique()
 
-    # aggregatedstats is for counts and preliminary metrics, one line per county per office
+    #stats is for counts and preliminary metrics, one line per county per office
     #aggregatedstats = pd.DataFrame(columns=["State","County", "Office", "FIPS","dem_total","rep_total","other_total","margin"])
     print(state)
 
-    aggregatedstats, offices = makeaggregated(df, counties)
+    stats, offices, statsnooffice = makeaggregated(df, counties)
 
-    sheetnameagg = state+'stats18'
+    officesheet = state+'stats'
+    noofficesheet = officesheet+'_county'
 
-    with pd.ExcelWriter('../stats/other_stats.xlsx',mode='a') as writer: aggregatedstats.to_excel(writer, sheet_name=sheetnameagg)
+    #with pd.ExcelWriter('../stats/statsgen18_1.xlsx',mode='a') as writer: stats.to_excel(writer, sheet_name=officesheet)
+    with pd.ExcelWriter('../stats/county_stats.xlsx', mode='a') as writer: statsnooffice.to_excel(writer, sheet_name=noofficesheet)
