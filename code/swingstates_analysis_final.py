@@ -4,20 +4,6 @@ import pandas as pd
 import numpy as np
 
 #results of Nov, 6 2018 election for each swing state
-
-swinggeneral18_old = {'Colorado' : 'openelections_data/openelections-data-co/2018/20181106__co__general__precinct.csv',
-                'Iowa': "openelections_data/openelections-data-ia/2018/20181106__ia__general__precinct.csv",
-                'Michigan' : "openelections_data/openelections-data-mi/2018/20181106__mi__general__precinct.csv",
-                'Minnesota' : "openelections_data/openelections-data-mn/2018/20181106__mn__general__precinct.csv",
-                'New Hampshire' : "openelections_data/openelections-data-nh/2018/20181106__nh__general__precinct.csv",
-                'Nevada' : "openelections_data/openelections-data-nv/2018/20181106__nv__general__precinct.csv",
-                'Ohio' : "openelections_data/openelections-data-oh/2018/20181106__oh__general__precinct.csv",
-                'Pennsylvania' : "openelections_data/openelections-data-pa/2018/20181106__pa__general__county.csv",
-                'Wisconsin' : "openelections_data/openelections-data-wi/2018/20181106__wi__general__ward.csv",
-                'Florida' : "openelections_data/openelections-results-fl/modified/20181106__fl__general__precinct__raw.csv",
-                'North Carolina' : "openelections_data/openelections-results-nc/modified/20181106__nc__general__precinct__raw.csv",
-                'Virginia' : 'openelections_data/openelections-results-va/modified/20181106__va__general__precinct__raw.csv' }
-
 swinggeneral18 = {'Colorado' : 'openelections_data/openelections-data-co/2018/20181106__co__general__county.csv',
                 'Iowa': "openelections_data/openelections-data-ia/2018/20181106__ia__general__county.csv",
                 'Michigan' : "openelections_data/openelections-data-mi/2018/20181106__mi__general__precinct.csv",
@@ -92,6 +78,8 @@ def makeaggregated(df, counties, state):
     statsnooffice = pd.DataFrame(columns=["State", "County", "FIPS","dem_total","rep_total","other_total","margin", "% margin"])
     stats = pd.DataFrame(columns=["State","County", "Office", "FIPS","dem_total","rep_total","other_total","margin"])
 
+    totalvotes = 0
+
     for county in counties:
         countydf = df[((df["county"] == county) & (df["party"].str.contains("DEM") | df["party"].str.contains("REP") | df["party"].str.contains("OTHER")))]
         offices = countydf["office"].unique()
@@ -113,55 +101,63 @@ def makeaggregated(df, counties, state):
 
             #print("dem_total %d, rep_total %d, other_total %d" % ( dem_total, rep_total, other_total))
 
-            if (other_total > dem_total) and (other_total > rep_total):
-                print("Other party won with %d votes" % (other_total))
+            #if (other_total > dem_total) and (other_total > rep_total):
+            #    print("Other party won with %d votes" % (other_total))
 
-
-
-            margin = dem_total - rep_total
-            percentmarginoffice = (margin/(dem_total+rep_total))
-
-            totalmargin += margin
-            totaldem += dem_total
-            totalrep += rep_total
-            totalother += other_total
-
-            # if a non-Democrat or non-Republican won, just increment total races but don't increment the races either party won
 
             otherwon = (other_total > dem_total) and (other_total > rep_total)
             otherdidwell = (other_total > dem_total) or (other_total > rep_total)
 
-            if otherwon == False:
-                if totalmargin > 0:
-                    racesdemswon += 1
+            if not otherdidwell:
+                margin = dem_total - rep_total
+                percentmarginoffice = (margin/(dem_total+rep_total))
+
+                totalmargin += margin
+                totaldem += dem_total
+                totalrep += rep_total
+                totalother += other_total
+
+                # if a non-Democrat or non-Republican won, just increment total races but don't increment the races either party won
+                if otherwon == False:
+                    if totalmargin > 0:
+                        racesdemswon += 1
+                    else:
+                        racesrepswon += 1
                 else:
-                    racesrepswon += 1
-            else:
-                totalraces += 1
-                percentmarginoffice = 0 # 0 indicates other party won
-                margin = 0 # 0 indicates other party won
+                    totalraces += 1
 
-            new_row = {"State":state,"County":county,"Office":office,"FIPS":fipsmap[state][county],"dem_total":dem_total,
-                       "rep_total":rep_total,"other_total":other_total,"margin":margin, "% margin": percentmarginoffice}
+                totalvotes += (totaldem + totalrep + totalother)
 
-            stats = stats.append(new_row, ignore_index=True)
-
-        #print("dem_total %d, rep_total %d, other_total %d" % (totaldem, totalrep, totalother))
 
         percentmargin = (totalmargin/(totaldem+totalrep))
 
         totalraces += (racesdemswon + racesrepswon)
 
         new_row_nooffice = {"State": state, "County": county, "FIPS": fipsmap[state][county], "dem_total": totaldem, "rep_total": totalrep,
-                   "other_total": totalother, "margin": totalmargin, "% margin": percentmargin, "total_races": totalraces, "dem_races_won": racesdemswon, "rep_races_won": racesrepswon}
+                            "margin": totalmargin, "% margin": percentmargin, "total_races": totalraces, "dem_races_won": racesdemswon, "rep_races_won": racesrepswon}
 
         statsnooffice = statsnooffice.append(new_row_nooffice, ignore_index=True)
 
-    return stats, offices, statsnooffice
+    print("total votes: ", totalvotes)
+    #write_totals(state, totaldem, totalrep, totalother, totalraces, racesrepswon, racesdemswon)
 
-def totalvotes():
-    #write a csv file with total votes cast in each state for Dems, Reps, Other
-    #also with a row for total races won, at the county level, for Dems, Reps, Other
+    return offices, statsnooffice
+
+# write a csv file with total votes cast in each state for Dems, Reps, Other
+# also with a row for total races won, at the county level, for Dems, Reps, Other
+def write_totals(state, totaldem, totalrep, totalother, totalraces, racesrepswon, racesdemswon):
+
+    totalvotes = totaldem + totalrep + totalother
+    racesotherwon = totalraces - (racesdemswon + racesrepswon)
+
+    import csv
+    with open('../stats/vote_totals_090320.csv', 'a') as f:
+        writer = csv.writer(f, delimiter=",")
+        writer.writerow([state])
+        writer.writerow(['Total_votes_Dem','Total_votes_Rep', 'Total_votes_Other', 'Total_votes', 'Total_races', 'Races_Dem', 'Races_Rep', 'Races_Other'])
+        writer.writerow([totaldem, totalrep, totalother, totalvotes, totalraces, racesdemswon, racesrepswon, racesotherwon])
+        writer.writerow(['\n'])
+
     return
 
 def main_0():
@@ -186,16 +182,15 @@ def main_0():
         #stats is for counts and preliminary metrics, one line per county per office
         #aggregatedstats = pd.DataFrame(columns=["State","County", "Office", "FIPS","dem_total","rep_total","other_total","margin"])
         print(state)
-        print((df["party"] == "OTHER").count())
 
-
-        stats, offices, statsnooffice = makeaggregated(df, counties, state)
+        offices, statsnooffice = makeaggregated(df, counties, state)
 
         officesheet = state+'stats'
         noofficesheet = officesheet+'_county'
 
         #with pd.ExcelWriter('../stats/090220_county_elections_office.xlsx', mode='a') as writer: stats.to_excel(writer, sheet_name=noofficesheet)
-        with pd.ExcelWriter('../stats/090320_county_elections_sansoffice.xlsx', mode='a') as writer: statsnooffice.to_excel(writer, sheet_name=noofficesheet)
+        #actually used this one
+        #with pd.ExcelWriter('../stats/090320_county_elections_sansoffice.xlsx', mode='a') as writer: statsnooffice.to_excel(writer, sheet_name=noofficesheet)
 
 def main():
     for state in statenames:

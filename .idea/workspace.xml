@@ -2,22 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8dbded8e-d429-43a1-9589-11ccb4248a85" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/swingstates_analysis_final.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analysis/Untitled 2.pages" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/Untitled 2.pages" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analysis/city analysis 1.pages" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/city analysis 1.pages" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/swingstates_flncva.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/swingstates_flncva.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/write up 0.pages" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/write up 0.pages" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/swingstates_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/swingstates_analysis.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/openelections_data/openelections-data-mi" beforeDir="false" afterPath="$PROJECT_DIR$/openelections_data/openelections-data-mi" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/openelections_data/openelections-data-mi/2018/20181106__mi__general__precinct.csv" beforeDir="false" afterPath="$PROJECT_DIR$/openelections_data/openelections-data-mi/2018/20181106__mi__general__precinct.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/openelections_data/openelections-data-nh" beforeDir="false" afterPath="$PROJECT_DIR$/openelections_data/openelections-data-nh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/openelections_data/openelections-data-nh/2018/20181106__nh__general__precinct.csv" beforeDir="false" afterPath="$PROJECT_DIR$/openelections_data/openelections-data-nh/2018/20181106__nh__general__precinct.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/openelections_data/openelections-results-nc" beforeDir="false" afterPath="$PROJECT_DIR$/openelections_data/openelections-results-nc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/openelections_data/openelections-results-nc/raw/20181106__nc__general__precinct__raw.csv" beforeDir="false" afterPath="$PROJECT_DIR$/openelections_data/openelections-results-nc/raw/20181106__nc__general__precinct__raw.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stats/county_data_newer.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/stats/county_data_newer.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stats/hypothesis_data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/stats/hypothesis_data.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stats/~$county_data_newer.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stats/~$hypothesis_data.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/visualizations/.~state_maps__82818.twbr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/visualizations/new_081720.twb" beforeDir="false" afterPath="$PROJECT_DIR$/visualizations/new_081720.twb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/visualizations/state_maps.twb" beforeDir="false" afterPath="$PROJECT_DIR$/visualizations/state_maps.twb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,15 +24,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/code/swingstates_analysis.py">
+        <entry file="file://$PROJECT_DIR$/code/swingstates_analysis_final.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="498">
-              <caret line="101" column="30" lean-forward="true" selection-start-line="101" selection-start-column="30" selection-end-line="101" selection-end-column="30" />
-              <folding>
-                <element signature="e#148#1536#0" />
-                <element signature="e#3818#4210#0" />
-                <element signature="e#8732#9130#0" />
-              </folding>
+            <state relative-caret-position="921">
+              <caret line="191" column="31" selection-start-line="191" selection-start-column="31" selection-end-line="191" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -101,13 +91,13 @@
         <option value="$PROJECT_DIR$/local_analysis/swingstates.py" />
         <option value="$PROJECT_DIR$/local_analysis/swingstates_analysis.py" />
         <option value="$PROJECT_DIR$/code/swingstates_analysis.py" />
+        <option value="$PROJECT_DIR$/code/swingstates_analysis_final.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1281" />
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1280" />
+    <option name="width" value="678" />
     <option name="height" value="706" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -116,6 +106,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -132,16 +123,16 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/local_analysis" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/code" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/code" />
       <recent name="$PROJECT_DIR$/local_analysis" />
     </key>
   </component>
@@ -157,28 +148,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.swingstates_analysis (1)">
-    <configuration name="explore" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Local Elections project" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/explore.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.swingstates_analysis_final">
     <configuration name="flexplore" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Local Elections project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -192,27 +162,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/local_analysis/flexplore.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="special_general_oh" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Local Elections project" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/local_analysis" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/local_analysis/special_general_oh.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -284,13 +233,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="swingstates_analysis_final" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Local Elections project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/swingstates_analysis_final.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.swingstates_analysis_final" />
         <item itemvalue="Python.swingstates_analysis (1)" />
         <item itemvalue="Python.swingstates_analysis" />
         <item itemvalue="Python.swingstates" />
         <item itemvalue="Python.flexplore" />
-        <item itemvalue="Python.special_general_oh" />
       </list>
     </recent_temporary>
   </component>
@@ -308,15 +278,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1280" y="23" width="1920" height="1057" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1280" height="706" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1400426" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22213247" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919224" visible="true" weight="0.31813473" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3295838" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49919224" visible="true" weight="0.4136808" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.36936936" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -333,8 +302,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/explore.py" />
-    <entry file="file://$PROJECT_DIR$/codebook-2016-precinct-local.md" />
     <entry file="file://$PROJECT_DIR$/coverage-notes-2016-precinct-local.md" />
     <entry file="file://$PROJECT_DIR$/goals.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -415,10 +382,10 @@
     <entry file="file://$PROJECT_DIR$/local_analysis/flexplore.py" />
     <entry file="file://$PROJECT_DIR$/local_analysis/swingstates_flncva.py" />
     <entry file="file://$PROJECT_DIR$/code/UScounties_UScounties.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/code/swingstates_flncva.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -448,37 +415,25 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/shapefiles/USA_Major_Cities/USA_Major_Cities.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/local_analysis/swingstates.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local_analysis/swingstates_analysis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="30" column="59" lean-forward="true" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/local_analysis/swingstates.py" />
+    <entry file="file://$PROJECT_DIR$/local_analysis/swingstates_analysis.py" />
     <entry file="file://$PROJECT_DIR$/code/swingstates_analysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="101" column="30" lean-forward="true" selection-start-line="101" selection-start-column="30" selection-end-line="101" selection-end-column="30" />
-          <folding>
-            <element signature="e#148#1536#0" />
-            <element signature="e#3818#4210#0" />
-            <element signature="e#8732#9130#0" />
-          </folding>
+        <state relative-caret-position="435">
+          <caret line="140" selection-start-line="140" selection-end-line="141" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/vote_totals_090320.csv" />
+    <entry file="file://$PROJECT_DIR$/code/swingstates_analysis_final.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="921">
+          <caret line="191" column="31" selection-start-line="191" selection-start-column="31" selection-end-line="191" selection-end-column="31" />
         </state>
       </provider>
     </entry>
