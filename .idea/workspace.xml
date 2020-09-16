@@ -2,18 +2,120 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8dbded8e-d429-43a1-9589-11ccb4248a85" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/code/swingstates_analysis_final.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analysis/write up 0.pages" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/write up 0.pages" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/swingstates_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/swingstates_analysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openelections_data/openelections-data-mi" beforeDir="false" afterPath="$PROJECT_DIR$/openelections_data/openelections-data-mi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openelections_data/openelections-data-mi/2018/20181106__mi__general__precinct.csv" beforeDir="false" afterPath="$PROJECT_DIR$/openelections_data/openelections-data-mi/2018/20181106__mi__general__precinct.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openelections_data/openelections-data-nh" beforeDir="false" afterPath="$PROJECT_DIR$/openelections_data/openelections-data-nh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openelections_data/openelections-data-nh/2018/20181106__nh__general__precinct.csv" beforeDir="false" afterPath="$PROJECT_DIR$/openelections_data/openelections-data-nh/2018/20181106__nh__general__precinct.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openelections_data/openelections-results-nc" beforeDir="false" afterPath="$PROJECT_DIR$/openelections_data/openelections-results-nc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/openelections_data/openelections-results-nc/raw/20181106__nc__general__precinct__raw.csv" beforeDir="false" afterPath="$PROJECT_DIR$/openelections_data/openelections-results-nc/raw/20181106__nc__general__precinct__raw.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/flexplore.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/old/flexplore.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/swingstates.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/old/swingstates.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/swingstates_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/old/swingstates_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/swingstates_analysis_final.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/swingstates_analysis_final.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/swingstates_diff.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/old/swingstates_diff.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/swingstates_flncva.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/old/swingstates_flncva.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coshapefile_2016_08.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/openelections_data/openelections-data-mi/2018/20181106__mi__general__precinct.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/openelections_data/openelections-data-mi/2018/20181106__mi__general__precinct.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/openelections_data/openelections-data-nh/2018/20181106__nh__general__precinct.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/openelections_data/openelections-data-nh/2018/20181106__nh__general__precinct.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/openelections_data/openelections-results-nc/raw/20181106__nc__general__precinct__raw.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/openelections_data/openelections-results-nc/raw/20181106__nc__general__precinct__raw.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goals.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/info copy.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openelections_data/openelections-data-co" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openelections_data/openelections-data-ia" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openelections_data/openelections-data-mi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openelections_data/openelections-data-mn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openelections_data/openelections-data-nh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openelections_data/openelections-data-nv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openelections_data/openelections-data-oh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openelections_data/openelections-data-pa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openelections_data/openelections-data-wi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openelections_data/openelections-results-fl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openelections_data/openelections-results-nc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openelections_data/openelections-results-va" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/USA_Major_Cities.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/USA_Major_Cities/0c5a2fa1-3463-4fc7-99e5-e206023a7e682020313-1-nmlntc.mln9c.cpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/USA_Major_Cities/0c5a2fa1-3463-4fc7-99e5-e206023a7e682020313-1-nmlntc.mln9c.dbf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/USA_Major_Cities/0c5a2fa1-3463-4fc7-99e5-e206023a7e682020313-1-nmlntc.mln9c.prj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/USA_Major_Cities/0c5a2fa1-3463-4fc7-99e5-e206023a7e682020313-1-nmlntc.mln9c.shp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/USA_Major_Cities/0c5a2fa1-3463-4fc7-99e5-e206023a7e682020313-1-nmlntc.mln9c.shx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/USA_Major_Cities/USA_Major_Cities.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/UScounties/UScounties.dbf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/UScounties/UScounties.prj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/UScounties/UScounties.sbn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/UScounties/UScounties.sbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/UScounties/UScounties.shp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/UScounties/UScounties.shx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/cb_2018_us_state_500k.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/cb_2018_us_state_500k/cb_2018_us_state_500k.cpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/cb_2018_us_state_500k/cb_2018_us_state_500k.dbf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/cb_2018_us_state_500k/cb_2018_us_state_500k.prj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/cb_2018_us_state_500k/cb_2018_us_state_500k.shp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/cb_2018_us_state_500k/cb_2018_us_state_500k.shp.ea.iso.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/cb_2018_us_state_500k/cb_2018_us_state_500k.shp.iso.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/cb_2018_us_state_500k/cb_2018_us_state_500k.shx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/cb_2018_us_state_5m.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/random files/UScounties_UScounties.shp.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/random files/coshapefile_2016_08/tl_2016_08_cousub.cpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/random files/coshapefile_2016_08/tl_2016_08_cousub.dbf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/random files/coshapefile_2016_08/tl_2016_08_cousub.prj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/random files/coshapefile_2016_08/tl_2016_08_cousub.shp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/random files/coshapefile_2016_08/tl_2016_08_cousub.shp.ea.iso.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/random files/coshapefile_2016_08/tl_2016_08_cousub.shp.iso.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/random files/coshapefile_2016_08/tl_2016_08_cousub.shp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/random files/coshapefile_2016_08/tl_2016_08_cousub.shx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/random files/more_shape_files/CO2 Emissions by London Borough/London Boroughs Spatial File/London_Borough_Excluding_MHW.GSS_CODE.atx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/random files/more_shape_files/CO2 Emissions by London Borough/London Boroughs Spatial File/London_Borough_Excluding_MHW.NAME.atx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/random files/more_shape_files/CO2 Emissions by London Borough/London Boroughs Spatial File/London_Borough_Excluding_MHW.dbf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/random files/more_shape_files/CO2 Emissions by London Borough/London Boroughs Spatial File/London_Borough_Excluding_MHW.prj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/random files/more_shape_files/CO2 Emissions by London Borough/London Boroughs Spatial File/London_Borough_Excluding_MHW.sbn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/random files/more_shape_files/CO2 Emissions by London Borough/London Boroughs Spatial File/London_Borough_Excluding_MHW.sbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/random files/more_shape_files/CO2 Emissions by London Borough/London Boroughs Spatial File/London_Borough_Excluding_MHW.shp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/random files/more_shape_files/CO2 Emissions by London Borough/London Boroughs Spatial File/London_Borough_Excluding_MHW.shp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/random files/more_shape_files/CO2 Emissions by London Borough/London Boroughs Spatial File/London_Borough_Excluding_MHW.shx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/random files/more_shape_files/CO2 Emissions by London Borough/carbon-emissions-borough.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/random files/more_shape_files/UScounties.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/random files/more_shape_files/UScounties/UScounties.dbf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/random files/more_shape_files/UScounties/UScounties.prj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/random files/more_shape_files/UScounties/UScounties.sbn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/random files/more_shape_files/UScounties/UScounties.sbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/random files/more_shape_files/UScounties/UScounties.shp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/random files/more_shape_files/UScounties/UScounties.shp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/random files/more_shape_files/UScounties/UScounties.shx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/random files/more_shape_files/World_Bank_CO2.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/random files/more_shape_files/all-geocodes-v2016.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/random files/more_shape_files/carbon-emissions-borough.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/random files/more_shape_files/co2_emissions_by_london_borough.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/random files/more_shape_files/wri_basins.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/random files/more_shape_files/wri_basins/wribasin.aih" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/random files/more_shape_files/wri_basins/wribasin.ain" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/random files/more_shape_files/wri_basins/wribasin.avl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/random files/more_shape_files/wri_basins/wribasin.dbf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/random files/more_shape_files/wri_basins/wribasin.prj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/random files/more_shape_files/wri_basins/wribasin.sbn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/random files/more_shape_files/wri_basins/wribasin.sbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/random files/more_shape_files/wri_basins/wribasin.shp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/random files/more_shape_files/wri_basins/wribasin.shx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/random files/state-geocodes-v2017.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/simplemaps_uscities_basicv1.6.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/tl_2019_us_state.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/tl_2019_us_state/tl_2019_us_state.cpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/tl_2019_us_state/tl_2019_us_state.dbf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/tl_2019_us_state/tl_2019_us_state.prj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/tl_2019_us_state/tl_2019_us_state.shp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/tl_2019_us_state/tl_2019_us_state.shp.ea.iso.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/tl_2019_us_state/tl_2019_us_state.shp.iso.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/tl_2019_us_state/tl_2019_us_state.shx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/us_states/cb_2018_us_state_5m.cpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/us_states/cb_2018_us_state_5m.dbf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/us_states/cb_2018_us_state_5m.prj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/us_states/cb_2018_us_state_5m.shp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/us_states/cb_2018_us_state_5m.shp.ea.iso.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/us_states/cb_2018_us_state_5m.shp.iso.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/us_states/cb_2018_us_state_5m.shx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/uscities/license.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/uscities/uscities.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shapefiles/uscities/uscities.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stats/090220_county_elections_sansoffice.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/stats/090220_county_elections_sansoffice.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stats/090320_county_elections_sansoffice.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/stats/090320_county_elections_sansoffice.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visualizations/.~state_maps__1916.twbr" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/visualizations/new_081720.twb" beforeDir="false" afterPath="$PROJECT_DIR$/visualizations/new_081720.twb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visualizations/state_maps.twb" beforeDir="false" afterPath="$PROJECT_DIR$/visualizations/state_maps.twb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visualizations/races_viz.twb" beforeDir="false" afterPath="$PROJECT_DIR$/visualizations/races_viz.twb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,8 +128,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/code/swingstates_analysis_final.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="921">
-              <caret line="191" column="31" selection-start-line="191" selection-start-column="31" selection-end-line="191" selection-end-column="31" />
+            <state relative-caret-position="480">
+              <caret line="33" column="3" lean-forward="true" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -96,9 +198,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="1281" />
     <option name="y" value="23" />
-    <option name="width" value="678" />
-    <option name="height" value="706" />
+    <option name="width" value="1919" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -117,7 +220,7 @@
             <path>
               <item name="county-elections" type="b2602c69:ProjectViewProjectNode" />
               <item name="county-elections" type="462c0819:PsiDirectoryNode" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="stats" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -131,6 +234,9 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/code/old" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/code" />
       <recent name="$PROJECT_DIR$/local_analysis" />
@@ -203,7 +309,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/swingstates_analysis.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/old/swingstates_analysis.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -278,14 +384,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="706" extended-state="6" />
+    <frame x="1281" y="23" width="1919" height="1057" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22213247" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14864145" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295838" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49919224" visible="true" weight="0.4136808" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49919224" visible="true" weight="0.41205212" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.36936936" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -302,15 +409,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/coverage-notes-2016-precinct-local.md" />
-    <entry file="file://$PROJECT_DIR$/goals.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="58" lean-forward="true" selection-start-line="2" selection-start-column="58" selection-end-line="2" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/openelections-data-oh/county_crosswalk.csv" />
     <entry file="file://$PROJECT_DIR$/info copy.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -381,31 +479,7 @@
     <entry file="file://$PROJECT_DIR$/local_analysis/UScounties_UScounties.csv" />
     <entry file="file://$PROJECT_DIR$/local_analysis/flexplore.py" />
     <entry file="file://$PROJECT_DIR$/local_analysis/swingstates_flncva.py" />
-    <entry file="file://$PROJECT_DIR$/code/UScounties_UScounties.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/swingstates_flncva.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/swingstates.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/flexplore.py">
+    <entry file="file://$PROJECT_DIR$/code/old/swingstates_flncva.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
@@ -415,14 +489,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/shapefiles/USA_Major_Cities/USA_Major_Cities.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/local_analysis/swingstates.py" />
     <entry file="file://$PROJECT_DIR$/local_analysis/swingstates_analysis.py" />
-    <entry file="file://$PROJECT_DIR$/code/swingstates_analysis.py">
+    <entry file="file://$PROJECT_DIR$/code/old/swingstates_analysis.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="140" selection-start-line="140" selection-end-line="141" selection-end-column="56" />
@@ -430,10 +504,56 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/code/vote_totals_090320.csv" />
+    <entry file="file://$PROJECT_DIR$/stats/vote_totals_090320.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/fips.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/old/swingstates_diff.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1632">
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/old/swingstates.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/old/flexplore.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/UScounties_UScounties.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/code/swingstates_analysis_final.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="921">
-          <caret line="191" column="31" selection-start-line="191" selection-start-column="31" selection-end-line="191" selection-end-column="31" />
+        <state relative-caret-position="480">
+          <caret line="33" column="3" lean-forward="true" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
         </state>
       </provider>
     </entry>

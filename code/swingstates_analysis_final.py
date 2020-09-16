@@ -1,4 +1,11 @@
-#modified and fixed August 31, 2020
+'''
+This script takes data about the 2018 midterm elections in several swing states,
+maps each county to its FIPS code so that it can plotted on a map, and
+calculates various metrics about each county.
+
+The data comes from static openelections.net data downloaded sometime in May 2020.
+The county-FIPS data comes from census.gov.
+'''
 
 import pandas as pd
 import numpy as np
@@ -21,11 +28,14 @@ swinggeneral18 = {'Colorado' : 'openelections_data/openelections-data-co/2018/20
 statenames = ['Colorado', 'Iowa', 'Michigan', 'Minnesota', 'New Hampshire', 'Ohio', 'Pennsylvania', 'Wisconsin', 'Florida', 'North Carolina', 'Virginia']
 stateabbs = {'Colorado':'CO', "Iowa":'IA', "Michigan":'MI', "Minnesota":'MN', "New Hampshire": 'NH', "Ohio":'OH', "Pennsylvania": 'PA', "Wisconsin":'WI', "Florida":'FL', "North Carolina":'NC', "Virginia":'VA'}
 
-fipsmap = {}
+fipsmap = {} # dictionary of dictionaries of states mapped to counties mapped to fips codes - see mapsfipsmap()
 statecountymap = {}
 
-#makes a dictionary of dictionaries of states mapped to counties mapped to fips codes
-# to access county FIPS code: fipsmap[STATEABBREVIATION][county] = FIPS
+'''
+This function makes a dictionary of dictionaries of states mapped to counties mapped to fips codes.
+The dictionary is saved into a global variable called fipsmap.
+To access county FIPS code: fipsmap[STATEABBREVIATION][county] = FIPS
+'''
 def makefipsmap():
     fipsdf = pd.read_csv("UScounties_UScounties.csv")
     for state in statenames:
@@ -42,7 +52,14 @@ def makefipsmap():
             fipsmap[state][county] = fipscode
 
 
-#clean party names up - categorize as DEM, REP, and OTHER
+'''
+
+This function takes a DataFrame containing information about a single state, and
+re-categorizes various party abbreviations into 3 parties: DEM (Democrat), REP (Republican), OTHER
+
+returns: cleaned DataFrame
+'''
+
 def cleanparty(df):
     #clean up non-democrat/republican
     df = df.dropna(subset=['party'])
@@ -60,10 +77,13 @@ def cleanparty(df):
     df['votes'] = df['votes'].astype(int)
     return df
 
-#for use in determining how one needs to clean the data
-#print out the possible parties and offices for each state
+'''
+This function is a function that helps determine how to clean the offices and parties for each state.
+It was a precursor to cleanparty().
+
+The function prints out the possible parties and offices for each state
+'''
 def viewpartyofficeinfo():
-    # florida, nc, va data is significantly different from the others (raw) and likely needs to be handled separately
     for state in statenames:
         filename = swinggeneral18[state]
         df = pd.read_csv('../'+filename)
@@ -74,6 +94,9 @@ def viewpartyofficeinfo():
         print("Offices", offices)
         print("Parties", parties)
 
+'''
+This function calculates various metrics from the raw data, and saves that information into a new DataFrame for each state.
+'''
 def makeaggregated(df, counties, state):
     statsnooffice = pd.DataFrame(columns=["State", "County", "FIPS","dem_total","rep_total","other_total","margin", "% margin"])
     stats = pd.DataFrame(columns=["State","County", "Office", "FIPS","dem_total","rep_total","other_total","margin"])
@@ -94,16 +117,9 @@ def makeaggregated(df, counties, state):
         totalraces = 0
 
         for office in offices:
-            #dem_total, rep_total, other_total
             dem_total = countydf[(countydf["party"] == 'DEM') & (countydf['office'] == office)]["votes"].sum(skipna=True)
             rep_total = countydf[(countydf["party"] == 'REP') & (countydf['office'] == office)]["votes"].sum(skipna=True)
             other_total = countydf[(countydf["party"] == 'OTHER') & (countydf['office'] == office)]["votes"].sum(skipna=True)
-
-            #print("dem_total %d, rep_total %d, other_total %d" % ( dem_total, rep_total, other_total))
-
-            #if (other_total > dem_total) and (other_total > rep_total):
-            #    print("Other party won with %d votes" % (other_total))
-
 
             otherwon = (other_total > dem_total) and (other_total > rep_total)
             otherdidwell = (other_total > dem_total) or (other_total > rep_total)
@@ -139,28 +155,10 @@ def makeaggregated(df, counties, state):
         statsnooffice = statsnooffice.append(new_row_nooffice, ignore_index=True)
 
     print("total votes: ", totalvotes)
-    #write_totals(state, totaldem, totalrep, totalother, totalraces, racesrepswon, racesdemswon)
 
     return offices, statsnooffice
 
-# write a csv file with total votes cast in each state for Dems, Reps, Other
-# also with a row for total races won, at the county level, for Dems, Reps, Other
-def write_totals(state, totaldem, totalrep, totalother, totalraces, racesrepswon, racesdemswon):
-
-    totalvotes = totaldem + totalrep + totalother
-    racesotherwon = totalraces - (racesdemswon + racesrepswon)
-
-    import csv
-    with open('../stats/vote_totals_090320.csv', 'a') as f:
-        writer = csv.writer(f, delimiter=",")
-        writer.writerow([state])
-        writer.writerow(['Total_votes_Dem','Total_votes_Rep', 'Total_votes_Other', 'Total_votes', 'Total_races', 'Races_Dem', 'Races_Rep', 'Races_Other'])
-        writer.writerow([totaldem, totalrep, totalother, totalvotes, totalraces, racesdemswon, racesrepswon, racesotherwon])
-        writer.writerow(['\n'])
-
-    return
-
-def main_0():
+def main():
 
     makefipsmap()
 
@@ -179,8 +177,6 @@ def main_0():
         if 'total' in counties:
             counties.remove('total') # dataframe might have a row that says "total" in it, and I want to remove that
 
-        #stats is for counts and preliminary metrics, one line per county per office
-        #aggregatedstats = pd.DataFrame(columns=["State","County", "Office", "FIPS","dem_total","rep_total","other_total","margin"])
         print(state)
 
         offices, statsnooffice = makeaggregated(df, counties, state)
@@ -188,25 +184,9 @@ def main_0():
         officesheet = state+'stats'
         noofficesheet = officesheet+'_county'
 
-        #with pd.ExcelWriter('../stats/090220_county_elections_office.xlsx', mode='a') as writer: stats.to_excel(writer, sheet_name=noofficesheet)
-        #actually used this one
-        #with pd.ExcelWriter('../stats/090320_county_elections_sansoffice.xlsx', mode='a') as writer: statsnooffice.to_excel(writer, sheet_name=noofficesheet)
 
-def main():
-    for state in statenames:
-        print(state)
-        filename = swinggeneral18[state]
-        df = pd.read_csv('../'+filename)
-
-        cleandf = cleanparty(df)
-        #This is a New Hampshire-specific dataset cleaning thing
-        cleandf = cleandf[~(cleandf.county == state.lower())]
-
-        df = cleandf
-
-        print((df["party"] == "OTHER").count())
-
-        viewpartyofficeinfo()
+        #note: I made a blank .xlsx with the 090320_county_elections_sansoffice.xlsx before running the program
+        with pd.ExcelWriter('../stats/090320_county_elections_sansoffice.xlsx', mode='a') as writer: statsnooffice.to_excel(writer, sheet_name=noofficesheet)
 
 
-main_0()
+main()

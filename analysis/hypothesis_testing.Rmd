@@ -11,7 +11,7 @@ The preview shows you a rendered HTML copy of the contents of the editor. Conseq
 
 ```{r}
 #for small margin = <=10%
-df <- data.frame('Counties w/ Big Cities' = c(54, 13), "Counties w/o Big Cities" = c(793,130))
+df <- data.frame('Counties w/ Big Cities' = c(54, 13), "Counties w/o Big Cities" = c(721,143))
 row.names(df) <- (c('Counties with Margins >10%', 'Counties with Margins <=10%'))
 df
 chisq.test(df) #chi-square test of significance
@@ -25,9 +25,9 @@ We should not reject the null hypothesis because the p-value is very large (sugg
 This is pretty interesting and potentially refutes the argument of whether cities are actually more liberal, at least in swing states.
 
 ```{r}
-#for small margin = <=1%
-df <- data.frame('Counties w/ Big Cities' = c(64, 3), "Counties w/o Big Cities" = c(909,14))
-row.names(df) <- (c('Counties with Margins >10%', 'Counties with Margins <=10%'))
+#for small margin = <=2%
+df <- data.frame('Counties w/ Big Cities' = c(63, 4), "Counties w/o Big Cities" = c(834,30))
+row.names(df) <- (c('Counties with Margins >2%', 'Counties with Margins <=2%'))
 df
 chisq.test(df) #chi-square test of significance
 fisher.test(df) #fisher's exact test of significance
@@ -38,4 +38,12 @@ H1, the alternative hypothesis, is "There IS a relationship between whether a co
 Interesting, same results, even for 1%, maybe because the n is really small. Fisher gets closer to significance, but if we want our threshhold to be 0.05, which I definitely should, we still cannot reject the null hypothesis. 
 
 We should not reject the null hypothesis because the p-value is very large (suggesting that this could easily have happened randomly).
-This is pretty interesting and potentially refutes the argument of whether cities are actually more liberal, at least in swing states.
+
+```{r}
+#Alternative Hypothesis: Counties with cities are more likely to have Margins > 0 than counties without cities 
+df <- data.frame('Counties w/ Big Cities' = c(54, 13), "Counties w/o Big Cities" = c(220,644))
+row.names(df) <- (c('Counties with Positive Marginal Votes', 'Counties with Negative Marginal Votes'))
+df
+chisq.test(df) #chi-square test of significance
+fisher.test(df) #fisher's exact test of significance
+```

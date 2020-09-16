@@ -2,6 +2,18 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/openelections_data/openelections-data-co" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/openelections_data/openelections-data-ia" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/openelections_data/openelections-data-mi" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/openelections_data/openelections-data-mn" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/openelections_data/openelections-data-nh" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/openelections_data/openelections-data-nv" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/openelections_data/openelections-data-oh" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/openelections_data/openelections-data-pa" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/openelections_data/openelections-data-wi" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/openelections_data/openelections-results-fl" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/openelections_data/openelections-results-nc" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/data/openelections_data/openelections-results-va" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/openelections-data-oh" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/openelections/openelections-data-co" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/openelections/openelections-data-ia" vcs="Git" />

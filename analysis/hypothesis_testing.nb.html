@@ -1767,43 +1767,44 @@ summary {
 <p>The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike <em>Knit</em>, <em>Preview</em> does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGYgPC0gZGF0YS5mcmFtZSgnQ291bnRpZXMgdy8gQmlnIENpdGllcycgPSBjKDU0LCAxMyksIFwiQ291bnRpZXMgdy9vIEJpZyBDaXRpZXNcIiA9IGMoNzkzLDEzMCkpXG5yb3cubmFtZXMoZGYpIDwtIChjKCdDb3VudGllcyB3aXRoIE1hcmdpbnMgPjEwJScsICdDb3VudGllcyB3aXRoIE1hcmdpbnMgPD0xMCUnKSlcbmRmXG5gYGAifQ== -->
-<pre class="r"><code>df &lt;- data.frame(&#39;Counties w/ Big Cities&#39; = c(54, 13), &quot;Counties w/o Big Cities&quot; = c(793,130))
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI2ZvciBzbWFsbCBtYXJnaW4gPSA8PTEwJVxuZGYgPC0gZGF0YS5mcmFtZSgnQ291bnRpZXMgdy8gQmlnIENpdGllcycgPSBjKDU0LCAxMyksIFwiQ291bnRpZXMgdy9vIEJpZyBDaXRpZXNcIiA9IGMoNzIxLDE0MykpXG5yb3cubmFtZXMoZGYpIDwtIChjKCdDb3VudGllcyB3aXRoIE1hcmdpbnMgPjEwJScsICdDb3VudGllcyB3aXRoIE1hcmdpbnMgPD0xMCUnKSlcbmRmXG5gYGAifQ== -->
+<pre class="r"><code>#for small margin = &lt;=10%
+df &lt;- data.frame(&#39;Counties w/ Big Cities&#39; = c(54, 13), &quot;Counties w/o Big Cities&quot; = c(721,143))
 row.names(df) &lt;- (c(&#39;Counties with Margins &gt;10%&#39;, &#39;Counties with Margins &lt;=10%&#39;))
 df</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibmNvbCI6MiwibnJvdyI6Mn0sInJkZiI6Ikg0c0lBQUFBQUFBQUEyMVF3VW9ETVJDZGJwdEtGNnlDb0tDWHZYZ1JObGk4ZUZCWnJIZ1JMNkxRbzNFYjIrQ2FsRTJXN1NmNGFYNVZkWkpOb0xzME1Nek1temR2TXZQeU1MdUtaekVBOUtFL1JDTVlBbmw3ZlV5dkFRWVJKajBZd01qNk5aS09NTERnMlByc0NkekxMaUM4QnYvNWJmRDN6TU10SVNMWk45Y1lIRHF4Qmp5ZXFrb2F3VFd0S2IwWEN6b1ZOdlBWazYycTJpNjNsVWVscXVrdTlkUFFuOVRDTEpOblZpNkUxTW5kNVBMY004NTJNMjV1TGFYei83eGdPa3dJWUR4bmh0SFBFb2RqdHVtMDdLbVZFVXBpVTJRdlNEck52YklESEZUU3JqRlA4MlVsdjlLSkhlREtqZTE3SDdWak96TDY4MUxFU3cyNXhFMTQrSHZCUG5qaGt6R2V5MTJMcmtvaFRkZ0VVVTJOTWl6dzRsd1ZBWEc3d2VZZkJwam1aamdDQUFBPSJ9 -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibmNvbCI6MiwibnJvdyI6Mn0sInJkZiI6Ikg0c0lBQUFBQUFBQUEyMVF3VW9ETVJDZGJwdEtGNnlDWUVFdmUvRWliTEI0OGFCU2JQRWlYa1NoMTdpTmJYQk5TamJMK2dYRnovUkxxcE5zQXQybGdXRm0zcng1azVtWDJmdzZuc2NBMElWdUg0MWdDT1R0OVRHOUFlaEZtSFNnQndQcnY1RjBnb0VGaDlaUG5zQzl5U1dFVitPYm54cG52eDV1Q0JISnZuaUJ3YkVUcThIVHFTcWxFYnlnRmFVUFlrbW53bWErT3RxcHF0MXlVM21nVlVYM3FaK0YvcVFTWnBVOE03MFVza2p1eDFjWG5uRytuM0Y3WnltdC8yYzVLOEtFQU1ZTFpoajkwRGdjczIycjVVQ3RqVkFTbXlKN1FkSnE3dWdXY0ZSS3U4WWl6VmFsL0V6SGRvQXIxM2JvZmRTTTdjam96MHNSTDlYbkVqZmg0ZTg1ZStlNVQ0WjRMbmN0dXRaQ21yQUpvZ1UxeXJEQWl6T1ZCOFR0QnR0L242cm5rRGdDQUFBPSJ9 -->
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
-{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["Counties.w..Big.Cities"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["Counties.w.o.Big.Cities"],"name":[2],"type":["dbl"],"align":["right"]}],"data":[{"1":"54","2":"793","_rn_":"Counties with Margins >10%"},{"1":"13","2":"130","_rn_":"Counties with Margins <=10%"}],"options":{"columns":{"min":{},"max":[10],"total":[2]},"rows":{"min":[10],"max":[10],"total":[2]},"pages":{}}}
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["Counties.w..Big.Cities"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["Counties.w.o.Big.Cities"],"name":[2],"type":["dbl"],"align":["right"]}],"data":[{"1":"54","2":"721","_rn_":"Counties with Margins >10%"},{"1":"13","2":"143","_rn_":"Counties with Margins <=10%"}],"options":{"columns":{"min":{},"max":[10],"total":[2]},"rows":{"min":[10],"max":[10],"total":[2]},"pages":{}}}
   </script>
 </div>
 <!-- rnb-frame-end -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY2hpc3EudGVzdChkZikgI2NoaS1zcXVhcmUgdGVzdCBvZiBzaWduaWZpY2FuY2VcbmBgYCJ9 -->
 <pre class="r"><code>chisq.test(df) #chi-square test of significance</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG5cdFBlYXJzb24ncyBDaGktc3F1YXJlZCB0ZXN0IHdpdGggWWF0ZXMnIGNvbnRpbnVpdHkgY29ycmVjdGlvblxuXG5kYXRhOiAgZGZcblgtc3F1YXJlZCA9IDEuMDMxOCwgZGYgPSAxLCBwLXZhbHVlID0gMC4zMDk3XG4ifQ== -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5cdFBlYXJzb24ncyBDaGktc3F1YXJlZCB0ZXN0IHdpdGggWWF0ZXMnIGNvbnRpbnVpdHkgY29ycmVjdGlvblxuXG5kYXRhOiAgZGZcblgtc3F1YXJlZCA9IDAuMTg2OTYsIGRmID0gMSwgcC12YWx1ZSA9IDAuNjY1NVxuIn0= -->
 <pre><code>
     Pearson&#39;s Chi-squared test with Yates&#39; continuity correction
 
 data:  df
-X-squared = 1.0318, df = 1, p-value = 0.3097</code></pre>
+X-squared = 0.18696, df = 1, p-value = 0.6655</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlzaGVyLnRlc3QoZGYpICNmaXNoZXIncyBleGFjdCB0ZXN0IG9mIHNpZ25pZmljYW5jZVxuYGBgIn0= -->
 <pre class="r"><code>fisher.test(df) #fisher&#39;s exact test of significance</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG5cdEZpc2hlcidzIEV4YWN0IFRlc3QgZm9yIENvdW50IERhdGFcblxuZGF0YTogIGRmXG5wLXZhbHVlID0gMC4yNzc4XG5hbHRlcm5hdGl2ZSBoeXBvdGhlc2lzOiB0cnVlIG9kZHMgcmF0aW8gaXMgbm90IGVxdWFsIHRvIDFcbjk1IHBlcmNlbnQgY29uZmlkZW5jZSBpbnRlcnZhbDpcbiAwLjM1NDUxMTUgMS40MDAxMjQ0XG5zYW1wbGUgZXN0aW1hdGVzOlxub2RkcyByYXRpbyBcbiAwLjY4MTI1NjEgXG4ifQ== -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5cdEZpc2hlcidzIEV4YWN0IFRlc3QgZm9yIENvdW50IERhdGFcblxuZGF0YTogIGRmXG5wLXZhbHVlID0gMC41MDE3XG5hbHRlcm5hdGl2ZSBoeXBvdGhlc2lzOiB0cnVlIG9kZHMgcmF0aW8gaXMgbm90IGVxdWFsIHRvIDFcbjk1IHBlcmNlbnQgY29uZmlkZW5jZSBpbnRlcnZhbDpcbiAwLjQyOTc0OTggMS42OTA1NDA2XG5zYW1wbGUgZXN0aW1hdGVzOlxub2RkcyByYXRpbyBcbiAwLjgyNDAzNjkgXG4ifQ== -->
 <pre><code>
     Fisher&#39;s Exact Test for Count Data
 
 data:  df
-p-value = 0.2778
+p-value = 0.5017
 alternative hypothesis: true odds ratio is not equal to 1
 95 percent confidence interval:
- 0.3545115 1.4001244
+ 0.4297498 1.6905406
 sample estimates:
 odds ratio 
- 0.6812561 </code></pre>
+ 0.8240369 </code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
@@ -1811,16 +1812,16 @@ odds ratio
 <p>We should not reject the null hypothesis because the p-value is very large (suggesting that this could easily have happened randomly). This is pretty interesting and potentially refutes the argument of whether cities are actually more liberal, at least in swing states.</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI2ZvciBzbWFsbCBtYXJnaW4gPSA8PTElXG5kZiA8LSBkYXRhLmZyYW1lKCdDb3VudGllcyB3LyBCaWcgQ2l0aWVzJyA9IGMoNjQsIDMpLCBcIkNvdW50aWVzIHcvbyBCaWcgQ2l0aWVzXCIgPSBjKDkwOSwxNCkpXG5yb3cubmFtZXMoZGYpIDwtIChjKCdDb3VudGllcyB3aXRoIE1hcmdpbnMgPjEwJScsICdDb3VudGllcyB3aXRoIE1hcmdpbnMgPD0xMCUnKSlcbmRmXG5gYGAifQ== -->
-<pre class="r"><code>#for small margin = &lt;=1%
-df &lt;- data.frame(&#39;Counties w/ Big Cities&#39; = c(64, 3), &quot;Counties w/o Big Cities&quot; = c(909,14))
-row.names(df) &lt;- (c(&#39;Counties with Margins &gt;10%&#39;, &#39;Counties with Margins &lt;=10%&#39;))
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI2ZvciBzbWFsbCBtYXJnaW4gPSA8PTIlXG5kZiA8LSBkYXRhLmZyYW1lKCdDb3VudGllcyB3LyBCaWcgQ2l0aWVzJyA9IGMoNjMsIDQpLCBcIkNvdW50aWVzIHcvbyBCaWcgQ2l0aWVzXCIgPSBjKDgzNCwzMCkpXG5yb3cubmFtZXMoZGYpIDwtIChjKCdDb3VudGllcyB3aXRoIE1hcmdpbnMgPjIlJywgJ0NvdW50aWVzIHdpdGggTWFyZ2lucyA8PTIlJykpXG5kZlxuYGBgIn0= -->
+<pre class="r"><code>#for small margin = &lt;=2%
+df &lt;- data.frame(&#39;Counties w/ Big Cities&#39; = c(63, 4), &quot;Counties w/o Big Cities&quot; = c(834,30))
+row.names(df) &lt;- (c(&#39;Counties with Margins &gt;2%&#39;, &#39;Counties with Margins &lt;=2%&#39;))
 df</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibmNvbCI6MiwibnJvdyI6Mn0sInJkZiI6Ikg0c0lBQUFBQUFBQUEyMVFVVXZETUJDK2Rldm1DazVCVU5DWHZ2aG1nOE1YSDFTR0U5OEVFWVc5eGk2dXdacU1KS1graVAzbTZTVk5ZQzBMSEhmMzNYZmY1ZTd0YVhHVExCSUE2RU4vaUJaakNQSEgrM04yQ3pDSU1PbkJBTWJXL3lMcEJBTUxUcXlmdllKN3N3TUlyOEUzUllOZkJiZ2xGQXY2d3pRR3gwNnNBVS9uc2hLR00wMXFRaDc1aXN5NXpYejFiS2NxZDh0dDViR1NOZG1uZmg3NjA1cWJJbjJoYXNXRlRoK20xNWVlY2JHZmNYZHZLWjMvNXlYVllVSUFreVUxbEh3cEhJN1p0dE15a212RHBjQ215RjR3N2pUM1ZBYzRxb1JkWTVubFJTVytzNmtkNE1xTkhYb2Z0V003TXZyelVyR1hHaktCbTdEdzk1SitzdEluRXp5WHV4WlpLeTVNMkFSUlRZdzBOUENTWEpZQmNidkI5aDlJNEEzWE9BSUFBQT09In0= -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibmNvbCI6MiwibnJvdyI6Mn0sInJkZiI6Ikg0c0lBQUFBQUFBQUEyMVF3VW9ETVJDZGJwdEtGNndGd2FLbnZYamNIT3JGZzViRmlyY2lpRUt2Y1J2YjRKcVVKTXQ2OU94SFZ5ZTdDWFNYQm9hWmVmUG1UV1plSGxjMzhTb0dnRDcwaDJnRVF5QnZyMC9wTGNBZ3dxUUhBeGc1LzQya2N3d2NPSFkrZS81eGJNZ21FRjZEL3paQU5nOXdTNGhJOXNVTkJwTmFyQUV2RnFxVVZuQkRLMG9meElZdWhNdDhkWHBRVllmbHR2SklxNG9lVTc4TS9Va2w3RFpaTXIwUjBpVHoyYlVuWEIwbjNOMGpvL1A3dkdBbTZBY3dYalBMNklmRzBaanRPeTBuYW1lRmt0Z1V1ZnVSVG5OUGQ0Q3pVcm9sMW1tK0xlVm5Pbk1ENm5KanA5NUg3ZGlOalA2OEZQRlNReTV4RVI3K1hyQjNYdmhrak1lcWIwVjNXa2diTmtIVVVLc3NDN3c0VjBWQTZ0MWcvdzhleTRaZU5nSUFBQT09In0= -->
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
-{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["Counties.w..Big.Cities"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["Counties.w.o.Big.Cities"],"name":[2],"type":["dbl"],"align":["right"]}],"data":[{"1":"64","2":"909","_rn_":"Counties with Margins >10%"},{"1":"3","2":"14","_rn_":"Counties with Margins <=10%"}],"options":{"columns":{"min":{},"max":[10],"total":[2]},"rows":{"min":[10],"max":[10],"total":[2]},"pages":{}}}
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["Counties.w..Big.Cities"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["Counties.w.o.Big.Cities"],"name":[2],"type":["dbl"],"align":["right"]}],"data":[{"1":"63","2":"834","_rn_":"Counties with Margins >2%"},{"1":"4","2":"30","_rn_":"Counties with Margins <=2%"}],"options":{"columns":{"min":{},"max":[10],"total":[2]},"rows":{"min":[10],"max":[10],"total":[2]},"pages":{}}}
   </script>
 </div>
 <!-- rnb-frame-end -->
@@ -1830,37 +1831,78 @@ df</code></pre>
 <!-- rnb-output-begin eyJkYXRhIjoiQ2hpLXNxdWFyZWQgYXBwcm94aW1hdGlvbiBtYXkgYmUgaW5jb3JyZWN0XG4ifQ== -->
 <pre><code>Chi-squared approximation may be incorrect</code></pre>
 <!-- rnb-output-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG5cdFBlYXJzb24ncyBDaGktc3F1YXJlZCB0ZXN0IHdpdGggWWF0ZXMnIGNvbnRpbnVpdHkgY29ycmVjdGlvblxuXG5kYXRhOiAgZGZcblgtc3F1YXJlZCA9IDEuNzI3NSwgZGYgPSAxLCBwLXZhbHVlID0gMC4xODg3XG4ifQ== -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5cdFBlYXJzb24ncyBDaGktc3F1YXJlZCB0ZXN0IHdpdGggWWF0ZXMnIGNvbnRpbnVpdHkgY29ycmVjdGlvblxuXG5kYXRhOiAgZGZcblgtc3F1YXJlZCA9IDAuNTA2OTcsIGRmID0gMSwgcC12YWx1ZSA9IDAuNDc2NVxuIn0= -->
 <pre><code>
     Pearson&#39;s Chi-squared test with Yates&#39; continuity correction
 
 data:  df
-X-squared = 1.7275, df = 1, p-value = 0.1887</code></pre>
+X-squared = 0.50697, df = 1, p-value = 0.4765</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlzaGVyLnRlc3QoZGYpICNmaXNoZXIncyBleGFjdCB0ZXN0IG9mIHNpZ25pZmljYW5jZVxuYGBgIn0= -->
 <pre class="r"><code>fisher.test(df) #fisher&#39;s exact test of significance</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG5cdEZpc2hlcidzIEV4YWN0IFRlc3QgZm9yIENvdW50IERhdGFcblxuZGF0YTogIGRmXG5wLXZhbHVlID0gMC4xMDE5XG5hbHRlcm5hdGl2ZSBoeXBvdGhlc2lzOiB0cnVlIG9kZHMgcmF0aW8gaXMgbm90IGVxdWFsIHRvIDFcbjk1IHBlcmNlbnQgY29uZmlkZW5jZSBpbnRlcnZhbDpcbiAwLjA4ODU3NzM5IDEuODMxNTU4MDZcbnNhbXBsZSBlc3RpbWF0ZXM6XG5vZGRzIHJhdGlvIFxuICAwLjMyOTE1MiBcbiJ9 -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5cdEZpc2hlcidzIEV4YWN0IFRlc3QgZm9yIENvdW50IERhdGFcblxuZGF0YTogIGRmXG5wLXZhbHVlID0gMC4yOTkyXG5hbHRlcm5hdGl2ZSBoeXBvdGhlc2lzOiB0cnVlIG9kZHMgcmF0aW8gaXMgbm90IGVxdWFsIHRvIDFcbjk1IHBlcmNlbnQgY29uZmlkZW5jZSBpbnRlcnZhbDpcbiAwLjE5MDk2OTkgMi4yODQ0NDM3XG5zYW1wbGUgZXN0aW1hdGVzOlxub2RkcyByYXRpbyBcbiAwLjU2Njk4MDMgXG4ifQ== -->
 <pre><code>
     Fisher&#39;s Exact Test for Count Data
 
 data:  df
-p-value = 0.1019
+p-value = 0.2992
 alternative hypothesis: true odds ratio is not equal to 1
 95 percent confidence interval:
- 0.08857739 1.83155806
+ 0.1909699 2.2844437
 sample estimates:
 odds ratio 
-  0.329152 </code></pre>
+ 0.5669803 </code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p>H0, the null hypothesis in this case, is “There is no relationship between whether a county contains a city and whether the margin is large or small.” H1, the alternative hypothesis, is “There IS a relationship between whether a contains a city and the margin.”</p>
 <p>Interesting, same results, even for 1%, maybe because the n is really small. Fisher gets closer to significance, but if we want our threshhold to be 0.05, which I definitely should, we still cannot reject the null hypothesis.</p>
-<p>We should not reject the null hypothesis because the p-value is very large (suggesting that this could easily have happened randomly). This is pretty interesting and potentially refutes the argument of whether cities are actually more liberal, at least in swing states.</p>
+<p>We should not reject the null hypothesis because the p-value is very large (suggesting that this could easily have happened randomly).</p>
 <!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI0FsdGVybmF0aXZlIEh5cG90aGVzaXM6IENvdW50aWVzIHdpdGggY2l0aWVzIGFyZSBtb3JlIGxpa2VseSB0byBoYXZlIE1hcmdpbnMgPiAwIHRoYW4gY291bnRpZXMgd2l0aG91dCBjaXRpZXMgXG5kZiA8LSBkYXRhLmZyYW1lKCdDb3VudGllcyB3LyBCaWcgQ2l0aWVzJyA9IGMoNTQsIDEzKSwgXCJDb3VudGllcyB3L28gQmlnIENpdGllc1wiID0gYygyMjAsNjQ0KSlcbnJvdy5uYW1lcyhkZikgPC0gKGMoJ0NvdW50aWVzIHdpdGggUG9zaXRpdmUgTWFyZ2luYWwgVm90ZXMnLCAnQ291bnRpZXMgd2l0aCBOZWdhdGl2ZSBNYXJnaW5hbCBWb3RlcycpKVxuZGZcbmBgYCJ9 -->
+<pre class="r"><code>#Alternative Hypothesis: Counties with cities are more likely to have Margins &gt; 0 than counties without cities 
+df &lt;- data.frame(&#39;Counties w/ Big Cities&#39; = c(54, 13), &quot;Counties w/o Big Cities&quot; = c(220,644))
+row.names(df) &lt;- (c(&#39;Counties with Positive Marginal Votes&#39;, &#39;Counties with Negative Marginal Votes&#39;))
+df</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibmNvbCI6MiwibnJvdyI6Mn0sInJkZiI6Ikg0c0lBQUFBQUFBQUEyMVF3VW9ETVJDZGJwdVdMbGdGd1Y3MzRrWFlnSGp4V0t4NGtZcUlTcTl4RzdlaGExS3lXZGVqQjcrN09za20wbDBhR0dibXpidzNtWG02WFY3Rnl4Z0ErdEFmb2hFTWdidzgzNlhYQUlNSWt4NE1ZR3o5RnphZFltREJpZld6ZTNCdmRnSGhOZmptdThGL0VnKzNoSWhrSDd6RTRNU0pOZURaWEZYU0NGN1NtdElia2RPNXNKbXZUdmVxYXIvY1ZoNXJWZE5ENnVlQm45VENySk5IVlNMOWt5Y0xwbk1oV1pHOEt2TS9yTlA4d0hOMnFMbXpWRmF3TW93TllMeGlodEYzalQvQ2JOZWhqTlRXQ0NXUkZObXprZzY1cHp2QWNTWHRicXMwVzFkeWsxN2FBYTdjMkpIM1VUdTJJNk5mTDBXODFKQkxYSVdIdnhmc2pSYyttZUFOM1FucFZndHB3aWFJbHRRb3cwSmZuS2tpSUc0MzJQMEJXdG5tTVUwQ0FBQT0ifQ== -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["Counties.w..Big.Cities"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["Counties.w.o.Big.Cities"],"name":[2],"type":["dbl"],"align":["right"]}],"data":[{"1":"54","2":"220","_rn_":"Counties with Positive Marginal Votes"},{"1":"13","2":"644","_rn_":"Counties with Negative Marginal Votes"}],"options":{"columns":{"min":{},"max":[10],"total":[2]},"rows":{"min":[10],"max":[10],"total":[2]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY2hpc3EudGVzdChkZikgI2NoaS1zcXVhcmUgdGVzdCBvZiBzaWduaWZpY2FuY2VcbmBgYCJ9 -->
+<pre class="r"><code>chisq.test(df) #chi-square test of significance</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5cdFBlYXJzb24ncyBDaGktc3F1YXJlZCB0ZXN0IHdpdGggWWF0ZXMnIGNvbnRpbnVpdHkgY29ycmVjdGlvblxuXG5kYXRhOiAgZGZcblgtc3F1YXJlZCA9IDg4LjM2OSwgZGYgPSAxLCBwLXZhbHVlIDwgMi4yZS0xNlxuIn0= -->
+<pre><code>
+    Pearson&#39;s Chi-squared test with Yates&#39; continuity correction
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiUiBOb3RlYm9vayIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKQWRkIGEgbmV3IGNodW5rIGJ5IGNsaWNraW5nIHRoZSAqSW5zZXJ0IENodW5rKiBidXR0b24gb24gdGhlIHRvb2xiYXIgb3IgYnkgcHJlc3NpbmcgKkNtZCtPcHRpb24rSSouCgpXaGVuIHlvdSBzYXZlIHRoZSBub3RlYm9vaywgYW4gSFRNTCBmaWxlIGNvbnRhaW5pbmcgdGhlIGNvZGUgYW5kIG91dHB1dCB3aWxsIGJlIHNhdmVkIGFsb25nc2lkZSBpdCAoY2xpY2sgdGhlICpQcmV2aWV3KiBidXR0b24gb3IgcHJlc3MgKkNtZCtTaGlmdCtLKiB0byBwcmV2aWV3IHRoZSBIVE1MIGZpbGUpLiAKClRoZSBwcmV2aWV3IHNob3dzIHlvdSBhIHJlbmRlcmVkIEhUTUwgY29weSBvZiB0aGUgY29udGVudHMgb2YgdGhlIGVkaXRvci4gQ29uc2VxdWVudGx5LCB1bmxpa2UgKktuaXQqLCAqUHJldmlldyogZG9lcyBub3QgcnVuIGFueSBSIGNvZGUgY2h1bmtzLiBJbnN0ZWFkLCB0aGUgb3V0cHV0IG9mIHRoZSBjaHVuayB3aGVuIGl0IHdhcyBsYXN0IHJ1biBpbiB0aGUgZWRpdG9yIGlzIGRpc3BsYXllZC4KCmBgYHtyfQojZm9yIHNtYWxsIG1hcmdpbiA9IDw9MTAlCmRmIDwtIGRhdGEuZnJhbWUoJ0NvdW50aWVzIHcvIEJpZyBDaXRpZXMnID0gYyg1NCwgMTMpLCAiQ291bnRpZXMgdy9vIEJpZyBDaXRpZXMiID0gYyg3OTMsMTMwKSkKcm93Lm5hbWVzKGRmKSA8LSAoYygnQ291bnRpZXMgd2l0aCBNYXJnaW5zID4xMCUnLCAnQ291bnRpZXMgd2l0aCBNYXJnaW5zIDw9MTAlJykpCmRmCmNoaXNxLnRlc3QoZGYpICNjaGktc3F1YXJlIHRlc3Qgb2Ygc2lnbmlmaWNhbmNlCmZpc2hlci50ZXN0KGRmKSAjZmlzaGVyJ3MgZXhhY3QgdGVzdCBvZiBzaWduaWZpY2FuY2UKYGBgCgpIMCwgdGhlIG51bGwgaHlwb3RoZXNpcyBpbiB0aGlzIGNhc2UsIGlzICJUaGVyZSBpcyBubyByZWxhdGlvbnNoaXAgYmV0d2VlbiB3aGV0aGVyIGEgY291bnR5IGNvbnRhaW5zIGEgY2l0eSBhbmQgd2hldGhlciB0aGUgbWFyZ2luIGlzIGxhcmdlIG9yIHNtYWxsLiIKSDEsIHRoZSBhbHRlcm5hdGl2ZSBoeXBvdGhlc2lzLCBpcyAiVGhlcmUgSVMgYSByZWxhdGlvbnNoaXAgYmV0d2VlbiB3aGV0aGVyIGEgY29udGFpbnMgYSBjaXR5IGFuZCB0aGUgbWFyZ2luLiIKCldlIHNob3VsZCBub3QgcmVqZWN0IHRoZSBudWxsIGh5cG90aGVzaXMgYmVjYXVzZSB0aGUgcC12YWx1ZSBpcyB2ZXJ5IGxhcmdlIChzdWdnZXN0aW5nIHRoYXQgdGhpcyBjb3VsZCBlYXNpbHkgaGF2ZSBoYXBwZW5lZCByYW5kb21seSkuClRoaXMgaXMgcHJldHR5IGludGVyZXN0aW5nIGFuZCBwb3RlbnRpYWxseSByZWZ1dGVzIHRoZSBhcmd1bWVudCBvZiB3aGV0aGVyIGNpdGllcyBhcmUgYWN0dWFsbHkgbW9yZSBsaWJlcmFsLCBhdCBsZWFzdCBpbiBzd2luZyBzdGF0ZXMuCgpgYGB7cn0KI2ZvciBzbWFsbCBtYXJnaW4gPSA8PTElCmRmIDwtIGRhdGEuZnJhbWUoJ0NvdW50aWVzIHcvIEJpZyBDaXRpZXMnID0gYyg2NCwgMyksICJDb3VudGllcyB3L28gQmlnIENpdGllcyIgPSBjKDkwOSwxNCkpCnJvdy5uYW1lcyhkZikgPC0gKGMoJ0NvdW50aWVzIHdpdGggTWFyZ2lucyA+MTAlJywgJ0NvdW50aWVzIHdpdGggTWFyZ2lucyA8PTEwJScpKQpkZgpjaGlzcS50ZXN0KGRmKSAjY2hpLXNxdWFyZSB0ZXN0IG9mIHNpZ25pZmljYW5jZQpmaXNoZXIudGVzdChkZikgI2Zpc2hlcidzIGV4YWN0IHRlc3Qgb2Ygc2lnbmlmaWNhbmNlCmBgYApIMCwgdGhlIG51bGwgaHlwb3RoZXNpcyBpbiB0aGlzIGNhc2UsIGlzICJUaGVyZSBpcyBubyByZWxhdGlvbnNoaXAgYmV0d2VlbiB3aGV0aGVyIGEgY291bnR5IGNvbnRhaW5zIGEgY2l0eSBhbmQgd2hldGhlciB0aGUgbWFyZ2luIGlzIGxhcmdlIG9yIHNtYWxsLiIKSDEsIHRoZSBhbHRlcm5hdGl2ZSBoeXBvdGhlc2lzLCBpcyAiVGhlcmUgSVMgYSByZWxhdGlvbnNoaXAgYmV0d2VlbiB3aGV0aGVyIGEgY29udGFpbnMgYSBjaXR5IGFuZCB0aGUgbWFyZ2luLiIKCkludGVyZXN0aW5nLCBzYW1lIHJlc3VsdHMsIGV2ZW4gZm9yIDElLCBtYXliZSBiZWNhdXNlIHRoZSBuIGlzIHJlYWxseSBzbWFsbC4gRmlzaGVyIGdldHMgY2xvc2VyIHRvIHNpZ25pZmljYW5jZSwgYnV0IGlmIHdlIHdhbnQgb3VyIHRocmVzaGhvbGQgdG8gYmUgMC4wNSwgd2hpY2ggSSBkZWZpbml0ZWx5IHNob3VsZCwgd2Ugc3RpbGwgY2Fubm90IHJlamVjdCB0aGUgbnVsbCBoeXBvdGhlc2lzLiAKCldlIHNob3VsZCBub3QgcmVqZWN0IHRoZSBudWxsIGh5cG90aGVzaXMgYmVjYXVzZSB0aGUgcC12YWx1ZSBpcyB2ZXJ5IGxhcmdlIChzdWdnZXN0aW5nIHRoYXQgdGhpcyBjb3VsZCBlYXNpbHkgaGF2ZSBoYXBwZW5lZCByYW5kb21seSkuClRoaXMgaXMgcHJldHR5IGludGVyZXN0aW5nIGFuZCBwb3RlbnRpYWxseSByZWZ1dGVzIHRoZSBhcmd1bWVudCBvZiB3aGV0aGVyIGNpdGllcyBhcmUgYWN0dWFsbHkgbW9yZSBsaWJlcmFsLCBhdCBsZWFzdCBpbiBzd2luZyBzdGF0ZXMu</div>
+data:  df
+X-squared = 88.369, df = 1, p-value &lt; 2.2e-16</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlzaGVyLnRlc3QoZGYpICNmaXNoZXIncyBleGFjdCB0ZXN0IG9mIHNpZ25pZmljYW5jZVxuYGBgIn0= -->
+<pre class="r"><code>fisher.test(df) #fisher&#39;s exact test of significance</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5cdEZpc2hlcidzIEV4YWN0IFRlc3QgZm9yIENvdW50IERhdGFcblxuZGF0YTogIGRmXG5wLXZhbHVlIDwgMi4yZS0xNlxuYWx0ZXJuYXRpdmUgaHlwb3RoZXNpczogdHJ1ZSBvZGRzIHJhdGlvIGlzIG5vdCBlcXVhbCB0byAxXG45NSBwZXJjZW50IGNvbmZpZGVuY2UgaW50ZXJ2YWw6XG4gIDYuMzc5NTk1IDI0LjY5ODE2MVxuc2FtcGxlIGVzdGltYXRlczpcbm9kZHMgcmF0aW8gXG4gICAxMi4xMjAxIFxuIn0= -->
+<pre><code>
+    Fisher&#39;s Exact Test for Count Data
+
+data:  df
+p-value &lt; 2.2e-16
+alternative hypothesis: true odds ratio is not equal to 1
+95 percent confidence interval:
+  6.379595 24.698161
+sample estimates:
+odds ratio 
+   12.1201 </code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiUiBOb3RlYm9vayIKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKQWRkIGEgbmV3IGNodW5rIGJ5IGNsaWNraW5nIHRoZSAqSW5zZXJ0IENodW5rKiBidXR0b24gb24gdGhlIHRvb2xiYXIgb3IgYnkgcHJlc3NpbmcgKkNtZCtPcHRpb24rSSouCgpXaGVuIHlvdSBzYXZlIHRoZSBub3RlYm9vaywgYW4gSFRNTCBmaWxlIGNvbnRhaW5pbmcgdGhlIGNvZGUgYW5kIG91dHB1dCB3aWxsIGJlIHNhdmVkIGFsb25nc2lkZSBpdCAoY2xpY2sgdGhlICpQcmV2aWV3KiBidXR0b24gb3IgcHJlc3MgKkNtZCtTaGlmdCtLKiB0byBwcmV2aWV3IHRoZSBIVE1MIGZpbGUpLiAKClRoZSBwcmV2aWV3IHNob3dzIHlvdSBhIHJlbmRlcmVkIEhUTUwgY29weSBvZiB0aGUgY29udGVudHMgb2YgdGhlIGVkaXRvci4gQ29uc2VxdWVudGx5LCB1bmxpa2UgKktuaXQqLCAqUHJldmlldyogZG9lcyBub3QgcnVuIGFueSBSIGNvZGUgY2h1bmtzLiBJbnN0ZWFkLCB0aGUgb3V0cHV0IG9mIHRoZSBjaHVuayB3aGVuIGl0IHdhcyBsYXN0IHJ1biBpbiB0aGUgZWRpdG9yIGlzIGRpc3BsYXllZC4KCmBgYHtyfQojZm9yIHNtYWxsIG1hcmdpbiA9IDw9MTAlCmRmIDwtIGRhdGEuZnJhbWUoJ0NvdW50aWVzIHcvIEJpZyBDaXRpZXMnID0gYyg1NCwgMTMpLCAiQ291bnRpZXMgdy9vIEJpZyBDaXRpZXMiID0gYyg3MjEsMTQzKSkKcm93Lm5hbWVzKGRmKSA8LSAoYygnQ291bnRpZXMgd2l0aCBNYXJnaW5zID4xMCUnLCAnQ291bnRpZXMgd2l0aCBNYXJnaW5zIDw9MTAlJykpCmRmCmNoaXNxLnRlc3QoZGYpICNjaGktc3F1YXJlIHRlc3Qgb2Ygc2lnbmlmaWNhbmNlCmZpc2hlci50ZXN0KGRmKSAjZmlzaGVyJ3MgZXhhY3QgdGVzdCBvZiBzaWduaWZpY2FuY2UKYGBgCgpIMCwgdGhlIG51bGwgaHlwb3RoZXNpcyBpbiB0aGlzIGNhc2UsIGlzICJUaGVyZSBpcyBubyByZWxhdGlvbnNoaXAgYmV0d2VlbiB3aGV0aGVyIGEgY291bnR5IGNvbnRhaW5zIGEgY2l0eSBhbmQgd2hldGhlciB0aGUgbWFyZ2luIGlzIGxhcmdlIG9yIHNtYWxsLiIKSDEsIHRoZSBhbHRlcm5hdGl2ZSBoeXBvdGhlc2lzLCBpcyAiVGhlcmUgSVMgYSByZWxhdGlvbnNoaXAgYmV0d2VlbiB3aGV0aGVyIGEgY29udGFpbnMgYSBjaXR5IGFuZCB0aGUgbWFyZ2luLiIKCldlIHNob3VsZCBub3QgcmVqZWN0IHRoZSBudWxsIGh5cG90aGVzaXMgYmVjYXVzZSB0aGUgcC12YWx1ZSBpcyB2ZXJ5IGxhcmdlIChzdWdnZXN0aW5nIHRoYXQgdGhpcyBjb3VsZCBlYXNpbHkgaGF2ZSBoYXBwZW5lZCByYW5kb21seSkuClRoaXMgaXMgcHJldHR5IGludGVyZXN0aW5nIGFuZCBwb3RlbnRpYWxseSByZWZ1dGVzIHRoZSBhcmd1bWVudCBvZiB3aGV0aGVyIGNpdGllcyBhcmUgYWN0dWFsbHkgbW9yZSBsaWJlcmFsLCBhdCBsZWFzdCBpbiBzd2luZyBzdGF0ZXMuCgpgYGB7cn0KI2ZvciBzbWFsbCBtYXJnaW4gPSA8PTIlCmRmIDwtIGRhdGEuZnJhbWUoJ0NvdW50aWVzIHcvIEJpZyBDaXRpZXMnID0gYyg2MywgNCksICJDb3VudGllcyB3L28gQmlnIENpdGllcyIgPSBjKDgzNCwzMCkpCnJvdy5uYW1lcyhkZikgPC0gKGMoJ0NvdW50aWVzIHdpdGggTWFyZ2lucyA+MiUnLCAnQ291bnRpZXMgd2l0aCBNYXJnaW5zIDw9MiUnKSkKZGYKY2hpc3EudGVzdChkZikgI2NoaS1zcXVhcmUgdGVzdCBvZiBzaWduaWZpY2FuY2UKZmlzaGVyLnRlc3QoZGYpICNmaXNoZXIncyBleGFjdCB0ZXN0IG9mIHNpZ25pZmljYW5jZQpgYGAKSDAsIHRoZSBudWxsIGh5cG90aGVzaXMgaW4gdGhpcyBjYXNlLCBpcyAiVGhlcmUgaXMgbm8gcmVsYXRpb25zaGlwIGJldHdlZW4gd2hldGhlciBhIGNvdW50eSBjb250YWlucyBhIGNpdHkgYW5kIHdoZXRoZXIgdGhlIG1hcmdpbiBpcyBsYXJnZSBvciBzbWFsbC4iCkgxLCB0aGUgYWx0ZXJuYXRpdmUgaHlwb3RoZXNpcywgaXMgIlRoZXJlIElTIGEgcmVsYXRpb25zaGlwIGJldHdlZW4gd2hldGhlciBhIGNvbnRhaW5zIGEgY2l0eSBhbmQgdGhlIG1hcmdpbi4iCgpJbnRlcmVzdGluZywgc2FtZSByZXN1bHRzLCBldmVuIGZvciAxJSwgbWF5YmUgYmVjYXVzZSB0aGUgbiBpcyByZWFsbHkgc21hbGwuIEZpc2hlciBnZXRzIGNsb3NlciB0byBzaWduaWZpY2FuY2UsIGJ1dCBpZiB3ZSB3YW50IG91ciB0aHJlc2hob2xkIHRvIGJlIDAuMDUsIHdoaWNoIEkgZGVmaW5pdGVseSBzaG91bGQsIHdlIHN0aWxsIGNhbm5vdCByZWplY3QgdGhlIG51bGwgaHlwb3RoZXNpcy4gCgpXZSBzaG91bGQgbm90IHJlamVjdCB0aGUgbnVsbCBoeXBvdGhlc2lzIGJlY2F1c2UgdGhlIHAtdmFsdWUgaXMgdmVyeSBsYXJnZSAoc3VnZ2VzdGluZyB0aGF0IHRoaXMgY291bGQgZWFzaWx5IGhhdmUgaGFwcGVuZWQgcmFuZG9tbHkpLgoKYGBge3J9CiNBbHRlcm5hdGl2ZSBIeXBvdGhlc2lzOiBDb3VudGllcyB3aXRoIGNpdGllcyBhcmUgbW9yZSBsaWtlbHkgdG8gaGF2ZSBNYXJnaW5zID4gMCB0aGFuIGNvdW50aWVzIHdpdGhvdXQgY2l0aWVzIApkZiA8LSBkYXRhLmZyYW1lKCdDb3VudGllcyB3LyBCaWcgQ2l0aWVzJyA9IGMoNTQsIDEzKSwgIkNvdW50aWVzIHcvbyBCaWcgQ2l0aWVzIiA9IGMoMjIwLDY0NCkpCnJvdy5uYW1lcyhkZikgPC0gKGMoJ0NvdW50aWVzIHdpdGggUG9zaXRpdmUgTWFyZ2luYWwgVm90ZXMnLCAnQ291bnRpZXMgd2l0aCBOZWdhdGl2ZSBNYXJnaW5hbCBWb3RlcycpKQpkZgpjaGlzcS50ZXN0KGRmKSAjY2hpLXNxdWFyZSB0ZXN0IG9mIHNpZ25pZmljYW5jZQpmaXNoZXIudGVzdChkZikgI2Zpc2hlcidzIGV4YWN0IHRlc3Qgb2Ygc2lnbmlmaWNhbmNlCmBgYAo=</div>
 
 
 
@@ -1907,7 +1949,7 @@ $(document).ready(function () {
 <!-- code folding -->
 <script>
 $(document).ready(function () {
-  window.initializeSourceEmbed("hypothesis_testing.Rmd");
+  window.initializeSourceEmbed("hypothesis_testing1.Rmd");
   window.initializeCodeFolding("show" === "show");
 });
 </script>

@@ -1,3 +1,0 @@
-Goals of this project:
-- demonstrate data cleaning
-- clear communication post that combines my college majors
