@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8dbded8e-d429-43a1-9589-11ccb4248a85" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/flexplore.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/old/flexplore.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/swingstates.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/old/swingstates.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/swingstates_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/old/swingstates_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Local Elections project.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/.RData" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/~$Graphs.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/~$ite up 2.docx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/code/swingstates_analysis_final.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/swingstates_analysis_final.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/swingstates_diff.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/old/swingstates_diff.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/swingstates_flncva.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/old/swingstates_flncva.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coshapefile_2016_08.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/data/openelections_data/openelections-data-mi/2018/20181106__mi__general__precinct.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/openelections_data/openelections-data-mi/2018/20181106__mi__general__precinct.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/openelections_data/openelections-data-nh/2018/20181106__nh__general__precinct.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/openelections_data/openelections-data-nh/2018/20181106__nh__general__precinct.csv" afterDir="false" />
@@ -111,11 +113,8 @@
       <change beforePath="$PROJECT_DIR$/shapefiles/uscities/license.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/shapefiles/uscities/uscities.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/shapefiles/uscities/uscities.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stats/090220_county_elections_sansoffice.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/stats/090220_county_elections_sansoffice.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stats/090320_county_elections_sansoffice.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/stats/090320_county_elections_sansoffice.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/visualizations/.~state_maps__1916.twbr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/visualizations/new_081720.twb" beforeDir="false" afterPath="$PROJECT_DIR$/visualizations/new_081720.twb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visualizations/races_viz.twb" beforeDir="false" afterPath="$PROJECT_DIR$/visualizations/races_viz.twb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -129,7 +128,7 @@
         <entry file="file://$PROJECT_DIR$/code/swingstates_analysis_final.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="480">
-              <caret line="33" column="3" lean-forward="true" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
+              <caret line="33" column="3" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -553,7 +552,7 @@
     <entry file="file://$PROJECT_DIR$/code/swingstates_analysis_final.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
-          <caret line="33" column="3" lean-forward="true" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
+          <caret line="33" column="3" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
         </state>
       </provider>
     </entry>
