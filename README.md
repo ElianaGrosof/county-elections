@@ -2,7 +2,7 @@
 
 This GitHub contains the code for an analysis of the 2018 midterm elections in swing states. 
 
-I examined the question of whether swing states voters support Democrats and Republicans equally at the local level and answered it with a combination of visualizations and tatistical tests.  
+The project asks: Are Democrat and Republican voters evenly distributed geographically across swing states?
 
 Check out the blog I wrote about this project: 
 
